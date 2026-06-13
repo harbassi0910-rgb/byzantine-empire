@@ -29,49 +29,6 @@
             padding-bottom: 60px;
         }
 
-        /* Editor Control Panel */
-        .admin-panel {
-            background-color: #0f172a;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 2px solid var(--secondary-gold);
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .admin-btn {
-            background-color: var(--secondary-gold);
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            font-weight: bold;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .admin-btn:hover {
-            background-color: #92400e;
-        }
-
-        .admin-btn.editing-active {
-            background-color: var(--edit-green);
-        }
-
-        /* Highlight editable areas when editing is active */
-        body.edit-mode-on [contenteditable="true"] {
-            outline: 2px dashed var(--edit-green);
-            background-color: #f0fdf4;
-            padding: 4px;
-            border-radius: 4px;
-        }
-
         header {
             background-color: var(--primary-blue);
             color: white;
@@ -265,14 +222,9 @@
 </head>
 <body>
 
-    <div class="admin-panel">
-        <span id="status-text">✨ View Mode (Read Only)</span>
-        <button id="edit-toggle-btn" class="admin-btn" onclick="toggleEditMode()">✏️ Turn On Edit Mode</button>
-    </div>
-
     <header>
-        <h1 contenteditable="false" id="site-title">Museum of Historical Thinking</h1>
-        <p contenteditable="false" id="site-subtitle">The Byzantine Empire Exhibit | Curated by: Student Archivist</p>
+        <h1>Museum of Historical Thinking</h1>
+        <p>The Byzantine Empire Exhibit | Created By: Harkirat Bassi</p>
     </header>
 
     <nav>
@@ -287,7 +239,6 @@
     </nav>
 
     <main>
-
         <section id="timeline" class="exhibit-section">
             <h2>Mandatory Exhibit: Civilization Timeline</h2>
             <p style="margin-bottom: 1.5rem; color:#64748b;">Key political, economic, military, cultural, and architectural achievements/events.</p>
@@ -295,72 +246,72 @@
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3 contenteditable="false">330 CE</h3>
-                        <strong contenteditable="false">Founding of Constantinople</strong>
-                        <p contenteditable="false">Roman Emperor Constantine the Great dedicates Byzantium as the new eastern capital of the Roman Empire, renaming it Constantinople. It becomes a strategic hub for trade and defense.</p>
+                        <h3>330 CE</h3>
+                        <strong>Founding of Constantinople</strong>
+                        <p>The Roman Emperor Constantine the Great announces Byzantium as the new capital city of the Eastern Roman Empire and changes its name to Constantinople. This city becomes important for trade and defense purposes.</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
-                        <h3 contenteditable="false">527 CE</h3>
-                        <strong contenteditable="false">Coronation of Justinian I</strong>
-                        <p contenteditable="false">Justinian I ascends the throne alongside Empress Theodora, marking the beginning of the empire's golden age and a massive expansion of territorial borders.</p>
+                        <h3>527 CE</h3>
+                        <strong>Coronation of Justinian I</strong>
+                        <p>Justinian I becomes the emperor together with Empress Theodora, ushering in the period of prosperity and growth of territory for the civilization that made it among.</p>
                     </div>
                 </div>
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3 contenteditable="false">529 CE</h3>
-                        <strong contenteditable="false">Publication of the Justinian Code</strong>
-                        <p contenteditable="false">The legal commission publishes the <em>Corpus Juris Civilis</em>, standardizing hundreds of years of chaotic Roman law into a cohesive code that forms the basis of many modern European legal systems.</p>
+                        <h3>529 CE</h3>
+                        <strong>Publication of the Justinian Code</strong>
+                        <p>The legal commission produces Corpus Juris Civilis, which provides order to several centuries of disorganized Roman laws by codifying them into a systematic set of laws.</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
-                        <h3 contenteditable="false">532 CE</h3>
-                        <strong contenteditable="false">The Nika Riots</strong>
-                        <p contenteditable="false">Political and social unrest erupts into open rebellion at the Hippodrome, nearly destroying the city. Emperor Justinian crushes the riots, cementing absolute imperial authority.</p>
+                        <h3>532 CE</h3>
+                        <strong>The Nika Riots</strong>
+                        <p>Unrest develops into a full-scale uprising in the Hippodrome, threatening to tear the city apart. The emperor puts down the rebellion, ensuring total dominance over the empire. Economics collapse; everyone despises him.</p>
                     </div>
                 </div>
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3 contenteditable="false">537 CE</h3>
-                        <strong contenteditable="false">Completion of the Hagia Sophia</strong>
-                        <p contenteditable="false">Built in just five years following the Nika Riots, this architectural masterpiece features an unprecedented massive dome, serving as the center of Orthodox Christianity.</p>
+                        <h3>537 CE</h3>
+                        <strong>Completion of the Hagia Sophia</strong>
+                        <p>Built within only five years after the Nika Revolt, this architectural wonder contains a dome that is unlike anything else, functioning as the epicenter for Orthodox Christianity. One of the earliest civilizations that adopted Christianity as its religion.</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
-                        <h3 contenteditable="false">674–678 CE</h3>
-                        <strong contenteditable="false">First Arab Siege of Constantinople</strong>
-                        <p contenteditable="false">The Byzantines successfully repel a massive naval siege by the Umayyad Caliphate, largely due to the devastating use of a new secret weapon known as "Greek Fire."</p>
+                        <h3>674–678 CE</h3>
+                        <strong>First Arab Siege of Constantinople</strong>
+                        <p>Byzantines manage to fend off an intense naval assault from the Umayyad Caliphate, which is mostly attributed to their effective use of their newfound and highly destructive weapon called “Greek Fire.”</p>
                     </div>
                 </div>
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3 contenteditable="false">726 CE</h3>
-                        <strong contenteditable="false">Start of the Iconoclastic Controversy</strong>
-                        <p contenteditable="false">Emperor Leo III bans the use of religious images (icons), triggering over a century of civil unrest, cultural destruction, and fracturing relations with Western Europe.</p>
+                        <h3>726 CE</h3>
+                        <strong>Start of the Iconoclastic Controversy</strong>
+                        <p>Leo III, the Byzantine Emperor, orders the destruction of religious icons, leading to more than one hundred years of unrest and the breakdown of relations between Byzantium and the West as well as Asia.</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <h3>1054 CE</h3>
-                        <strong contenteditable="false">The Great Schism</strong>
-                        <p contenteditable="false">Mutual excommunications between the Pope in Rome and the Patriarch in Constantinople permanently divide the Christian world into Roman Catholicism and Eastern Orthodoxy.</p>
+                        <strong>The Great Schism</strong>
+                        <p>The Christian world was permanently split into Roman Catholicism and Eastern Orthodoxy with mutual excommunications between the Pope in Rome and the Patriarch in Constantinople.</p>
                     </div>
                 </div>
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3 contenteditable="false">1204 CE</h3>
-                        <strong contenteditable="false">The Fourth Crusade Sack of Constantinople</strong>
-                        <p contenteditable="false">Diverted Western European crusaders attack and brutally sack Constantinople, establishing a temporary Latin Empire and permanently crippling Byzantine wealth, military power, and infrastructure.</p>
+                        <h3>1204 CE</h3>
+                        <strong>The Fourth Crusade Sack of Constantinople</strong>
+                        <p>Western European crusaders, diverted from their original goal, attack and sack Constantinople. They set up a short-lived Latin Empire, and cripple Byzantine wealth, military strength, and infrastructure for good.</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
-                        <h3 contenteditable="false">1453 CE</h3>
-                        <strong contenteditable="false">Fall of Constantinople</strong>
-                        <p contenteditable="false">Ottoman Sultan Mehmed II breaches the city's ancient walls using gunpowder artillery. The death of the last emperor, Constantine XI, marks the formal end of the Byzantine Empire.</p>
+                        <h3>1453 CE</h3>
+                        <strong>Fall of Constantinople</strong>
+                        <p>Ottoman Sultan Mehmed II uses gunpowder artillery to break through the ancient walls of the city. The last emperor, Constantine XI, dies, marking the formal demise of the Byzantine Empire.</p>
                     </div>
                 </div>
             </div>
@@ -368,130 +319,113 @@
 
         <section id="villain" class="exhibit-section">
             <h2>Ethical Judgment: Historical Villain</h2>
-            
-            <div class="villain-header" contenteditable="false">
+            <div class="villain-header">
                 The Accused: Emperor Justinian I
             </div>
-
             <div class="field-box">
                 <label>Describe who this person was in the Historical Context</label>
-                <p contenteditable="false">Emperor Justinian I ruled from 527 to 565 CE during a period of massive architectural triumph, territorial expansion, and legal reform. However, his heavy taxation and autocratic rule caused intense public anger, culminating in the Nika Riots of 532 CE.</p>
+                <p>From 527 to 565 CE, Emperor Justinian I presided over a time of great architectural achievement, growth in land area, and changes in law; however, high taxation and an autocratic form of government led to dissatisfaction among the populace, culminating in the Nika Riots of 532 CE.</p>
             </div>
-
             <div class="field-box">
                 <label>Why They Would Be "Canceled" Today (Apply Modern Ethical Judgment)</label>
-                <p contenteditable="false">During the riots, Justinian initially panicked and prepared to flee the city. Spurred on by Empress Theodora, he changed tactics and sent his generals into the Hippodrome where the protestors had gathered. His military locked the gates and systematically slaughtered over 30,000 unarmed or poorly armed citizens. By modern human rights standards, this intentional, mass state-sponsored massacre of peaceful and violent political dissidents alike to maintain personal autocratic power would be classified as an atrocious war crime.</p>
+                <p>Initially panicking during the Riot, Justinian got ready to leave the city. In response to an unexpected show of courage from Empress Theodora, he altered his plan of escape and sent generals into the Hippodrome to confront the hundreds of thousands of citizens that had gathered there in protest. The military then locked down the compound and systematically executed more than 30,000 unarmed or inadequately armed individuals. This was an intentional large-scale militarised state's attempt to kill as many citizens dissenting from the ruling authority of Justinian as possible, to keep him in power by force, and would therefore be deemed by present-day international human rights laws as an absolute war crime.</p>
             </div>
         </section>
 
         <section id="inventions" class="exhibit-section">
             <h2>Historical Significance: Great Inventions</h2>
             <p style="margin-bottom: 1.5rem; color:#64748b;">Three innovations that transformed Byzantine society and its various social classes.</p>
-            
             <div class="grid-3">
                 <div class="field-box">
-                    <label contenteditable="false">1. Innovation: Greek Fire</label>
-                    <p><strong>Significance:</strong> <span contenteditable="false">A highly classified, incendiary chemical weapon that could burn on water and could not be extinguished by normal means, projected through siphons on warships.</span></p>
-                    <p style="margin-top: 10px;"><strong>Social Group Impact:</strong> <span contenteditable="false">This preserved the survival of the empire’s ruling and merchant classes by successfully defending Constantinople against multiple maritime invasions, securing maritime trade routes for centuries.</span></p>
+                    <label>1. Innovation: Greek Fire</label>
+                    <p><strong>Significance:</strong> A top secret, chemical weapon that would burn on water and couldn't be put out by most means, shot out through siphons on warships.</p>
+                    <p style="margin-top: 10px;"><strong>Social Group Impact:</strong> This had preserved the survival of the empire’s ruling and merchant classes by successfully saving Constantinople against multiple maritime invasions, securing maritime trade routes for centuries.</p>
                 </div>
-
                 <div class="field-box">
-                    <label contenteditable="false">2. Innovation: Pendentive Architecture</label>
-                    <p><strong>Significance:</strong> <span contenteditable="false">The structural innovation of placing a massive circular dome over a square room using triangular support pillars (pendentives), famously utilized in the Hagia Sophia.</span></p>
-                    <p style="margin-top: 10px;"><strong>Social Group Impact:</strong> <span contenteditable="false">It deeply impacted the religious and peasant classes, fostering an intense spiritual awe. The engineering made churchgoers feel as though the physical ceiling was a literal gateway suspended from heaven.</span></p>
+                    <label>2. Innovation: Pendentive Architecture</label>
+                    <p><strong>Significance:</strong> The structural innovation of placing a massive circular dome over a square room by using triangular support pillars (pendentives), famously utilized in the Hagia Sophia.</p>
+                    <p style="margin-top: 10px;"><strong>Social Group Impact:</strong> It had deeply impacted the religious and poor classes, fostering an intense spiritual awe. The engineering made churchgoers feel as the physical ceiling was a literal gateway from heaven.</p>
                 </div>
-
                 <div class="field-box">
-                    <label contenteditable="false">3. Innovation: The Justinian Code</label>
-                    <p><strong>Significance:</strong> <span contenteditable="false">A massive collection, organization, and modernization of hundreds of years of chaotic Roman laws and legal opinions into a single, organized civil code (<em>Corpus Juris Civilis</em>).</span></p>
-                    <p style="margin-top: 10px;"><strong>Social Group Impact:</strong> <span contenteditable="false">It streamlined the judicial process for lawyers, bureaucrats, and judges, creating a more predictable and uniform system of justice, property rights, and contracts for upper- and middle-class citizens.</span></p>
+                    <label>3. Innovation: The Justinian Code</label>
+                    <p><strong>Significance:</strong> A massive collection of organization, and modernization of hundreds of years of chaotic Roman laws and legal opinions was put into a single, organized civil code (Corpus Juris Civilis).</p>
+                    <p style="margin-top: 10px;"><strong>Social Group Impact:</strong> It had streamlined the judicial process for lawyers, bureaucrats, and judges, creating a more predictable and uniform system of justice, property rights, and contracts for upper- and middle-class citizens and poor citizens.</p>
                 </div>
             </div>
         </section>
 
         <section id="good-bad" class="exhibit-section">
             <h2>Historical Perspective: The Good & The Bad</h2>
-            
             <div class="field-box">
                 <label>The Admired Aspect (Describe the Specific Achievement)</label>
-                <p contenteditable="false">The extensive preservation of classical antiquity. While Western Europe went through centuries of political fragmentation and lost touch with past scholarship, Byzantine scholars, scribes, and monastics meticulously copied, preserved, and analyzed ancient Greek and Roman philosophy, science, drama, and literature.</p>
+                <p>The extensive preservation of classical antiquity. While Western Europe had gone through centuries of political fragmentation and lost touch with past scholarship, Byzantine scholars, scribes, and monastics was meticulously copied, preserved, and analyzed ancient Greek and Roman philosophy, science, drama, and literature.</p>
             </div>
-
             <div class="field-box">
                 <label>The Offensive Aspect (Describe the Practice or Cultural Norm)</label>
-                <p contenteditable="false">The common political practice of facial mutilation (rhinotomy and blinding). Because a Byzantine emperor was culturally required to be physically unblemished to reflect divine perfection, deposed emperors or political rivals had their noses sliced off, tongues cut out, or eyes permanently blinded to disqualify them from ever holding power again.</p>
+                <p>The common political practice of facial mutilation (rhinotomy and blinding). Because a Byzantine emperor was culturally required to be physically not having defects to reflect the best perfection, deposed emperors or political rivals had their noses sliced off, tongues cut out, or eyes permanently blinded to disqualify them from ever holding power again.</p>
             </div>
-
             <div class="field-box">
                 <label>Reflection on Personal Values, Beliefs, and Biases</label>
-                <p contenteditable="false">From a modern humanitarian standpoint, political mutilation is viewed as a horrific, cruel, and unusual violation of basic human dignity. However, a personal bias might overlook that the Byzantines viewed this practice as a more "merciful" alternative to standard execution, believing it avoided unnecessary bloodshed while still maintaining political stability.</p>
+                <p>From a modern humanitarian standpoint, political mutilation is viewed as a horrific, cruel, and unusual violation of basic human dignity. However, a personal bias might overlook that the Byzantines viewed this practice as a more "merciful" alternative to standard execution, believing it had avoided unnecessary bloodshed while still maintaining good political stability.</p>
             </div>
         </section>
 
         <section id="fall" class="exhibit-section">
             <h2>Cause & Consequence: Explaining the Fall</h2>
-            
             <div class="field-box">
                 <label>Long-Term (Background) Causes</label>
-                <div contenteditable="false">
-                    <p><strong>1. Economic Decline and Feudalization:</strong> Over centuries, wealthy landed aristocrats (the <em>Dynatoi</em>) seized land from the peasant soldier class, draining the empire's tax base and destroying the local military recruitment system.</p>
-                    <p style="margin-top: 5px;"><strong>2. The Fourth Crusade (1204 CE):</strong> Western European Crusaders completely devastated the capital, looting its wealth, destroying its infrastructure, and dividing its territories. The empire never truly recovered its economy or population.</p>
-                    <p style="margin-top: 5px;"><strong>3. Constant Border Warfare:</strong> The empire was trapped in perpetual, multi-front wars against the Bulgars and Serbs in Europe, and Arab caliphates followed by the Seljuk Turks in Asia Minor, gradually chipping away at its borders.</p>
+                <div>
+                    <p><strong>1. Economic Decline and Feudalization:</strong> Over centuries, wealthy landed aristocrats (the <em>Dynatoi</em>) seized land from the poor soldier class, draining the empire's taxes and destroying the local military recruitment system.</p>
+                    <p style="margin-top: 5px;"><strong>2. The Fourth Crusade (1204 CE):</strong> Western European Crusaders completely devastated the capital, looting its wealth, destroying its infrastructure, and making wars in its territories. The empire could never truly recover its economy or population.</p>
+                    <p style="margin-top: 5px;"><strong>3. Constant Border Warfare:</strong> The empire was trapped in perpetual, multi-front wars against the Bulgarians and Serbians in Europe, and Arab caliphates followed by the Seljuk Turks in Asia Minor, gradually taking away at its borders.</p>
                 </div>
             </div>
-
             <div class="field-box">
                 <label>Immediate (Trigger) Causes</label>
-                <div contenteditable="false">
-                    <p><strong>1. Ottoman Military Superiority and Gunpowder:</strong> Sultan Mehmed II brought advanced, giant bronze cannons capable of firing massive stone balls that systematically obliterated the ancient, thrice-layered Theodosian Walls.</p>
-                    <p style="margin-top: 5px;"><strong>2. Total Isolation:</strong> Appeals to Western European nations for military aid failed due to lingering religious animosity from the Great Schism, leaving fewer than 8,000 defenders to hold off an Ottoman army of over 80,000.</p>
-                    <p style="margin-top: 5px;"><strong>3. The Final Breach:</strong> On May 29, 1453, Ottoman forces launched a coordinated final assault, successfully finding an unlocked postern gate (Kerkoporta) and overwhelming the exhausted defenders.</p>
+                <div>
+                    <p><strong>1. Ottoman Military Superiority and Gunpowder:</strong> Sultan Mehmed II had brought many advanced, giant bronze cannons capable of firing massive stone balls that could obliterate the ancient, thrice-layered Theodosian Walls.</p>
+                    <p style="margin-top: 5px;"><strong>2. Total Isolation:</strong> The Byzantines had appealed to Western European nations for military aid failed due to lingering religious animosity from the Great Schism, leaving fewer than 8,000 defenders to hold off an Ottoman army of over 80,000.</p>
+                    <p style="margin-top: 5px;"><strong>3. The Final Breach:</strong> On May 29, 1453, Ottoman forces launched a coordinated final assault, successfully finding a unlocked postern gate (Kerkoporta) and overwhelming the already exhausted defenders.</p>
                 </div>
             </div>
         </section>
 
         <section id="before-after" class="exhibit-section">
             <h2>Change & Continuity: Before & After</h2>
-            <div class="villain-header" style="background-color: #fef3c7; color: #92400e; border-color: #fcd34d;" contenteditable="false">
+            <div class="villain-header" style="background-color: #fef3c7; color: #92400e; border-color: #fcd34d;">
                 Momentous Turning Point: The Iconoclastic Controversy (726–843 CE)
             </div>
-
             <div class="field-box">
                 <label>The Core Transformation (Describe the event and its impact)</label>
-                <p contenteditable="false">It caused massive internal social and religious turmoil, turning the state military against its own citizens and monastic communities. It resulted in the destruction of centuries of religious art and severely fractured geopolitical relations between the Byzantine emperors and the Popes in Rome, accelerating the alignment of the Western Papacy with Charlemagne and the Franks.</p>
+                <p>It caused massive internal social and religious turmoil, turning the state military against its own citizens and the monastic communities. It had resulted in the destruction of centuries of religious art and severely fractured geopolitical relations between the Byzantine emperors and the Popes in Rome, accelerating the alignment of the Western Papacy with Charlemagne and the Francs.</p>
             </div>
-
             <div class="field-box">
                 <label>Societal Transformation (Detail specific shifts)</label>
-                <p contenteditable="false">The relationship between the state and religious visual culture shifted profoundly. It redefined the boundary of the emperor's power over church doctrine and temporarily split the population into opposing theological factions (Iconoclasts vs. Iconophiles), forever altering the course of Christian art.</p>
+                <p>The relationship between the state and religious visual culture shifted profoundly. It had redefined the boundary of the emperor's power over church doctrine and temporarily split the population into opposing theological factions (Iconoclasts vs. Iconophiles), forever changing the course of Christian art.</p>
             </div>
-
             <div class="field-box">
                 <label>Societal Continuity (What aspects stayed the same?)</label>
-                <p contenteditable="false">Despite decades of violent debate over how religious images should be viewed, the absolute theological structure of Eastern Orthodox Christianity survived intact, the supremacy of the emperor over church affairs (Caesaropapism) remained undisputed, and religious devotion continued to dominate daily civic life.</p>
+                <p>Despite decades of violent debate over how religious images should be viewed, the absolute theological structure of Eastern Orthodox Christianity had been intact, the supremacy of the emperor over church affairs had remained undisputed, and religious devotion continued to be part of a daily civic life.</p>
             </div>
         </section>
 
         <section id="write-stuff" class="exhibit-section">
             <h2>Evidence & Interpretation: "The Write Stuff"</h2>
-            
             <div class="field-box">
                 <label>What did "writing" consist of in your civilization?</label>
-                <p contenteditable="false">Writing in the Byzantine Empire consisted of <strong>Medieval Greek</strong>, written in both formal uncial (capital letters) and later minuscule cursive scripts on parchment, vellum, and occasionally imported papyrus.</p>
+                <p>Writing in the Byzantine Empire consisted of Medieval Greek, written in both formal uncial (capital letters) and later minuscule cursive scripts on parchment, vellum, and occasionally imported papyrus.</p>
             </div>
-
             <div class="field-box">
                 <label>Reflect on how writing was used and to what effect</label>
-                <p contenteditable="false">Writing was heavily utilized by the extensive imperial bureaucracy to enforce centralized tax records, issue complex legal decrees, and maintain administrative oversight across distant provinces. It was also vital to theological scholarship, preserving Christian orthodox doctrine against heresies, and copying ancient classical texts. The effect was a highly literate, intensely centralized administration that allowed a relatively small ruling class in Constantinople to smoothly manage and preserve a vast, multi-ethnic empire for over a millennium.</p>
+                <p>Writing was heavily utilized by the extensive imperial bureaucracy to enforce the centralized tax records, issue the complex legal decrees, and maintain administrative oversight across the distant provinces. It was also vital to keep the theological scholarship, preserving Christian orthodox doctrine against heresies, and copying ancient classical texts. The effect was a highly literate, intensely centralized administration that allowed a relatively small ruling class in Constantinople to manage and preserve a vast, multi-ethnic empire for over a millennium.</p>
             </div>
         </section>
 
         <section id="sources" class="exhibit-section">
             <h2>Historical Sources & Bibliography</h2>
             <p style="margin-bottom: 1.5rem; color:#64748b;">The verified historical texts and primary source accounts used to curate this exhibit.</p>
-            
             <div class="field-box">
-                <ul class="sources-list" contenteditable="false">
+                <ul class="sources-list">
                     <li>
                         <span class="source-tag">Primary Source</span> 
                         <strong>Procopius of Caesarea.</strong> <em>The Secret History (Historia Arcana)</em>, c. 550 CE. 
@@ -520,43 +454,6 @@
                 </ul>
             </div>
         </section>
-
     </main>
-
-    <script>
-        let isEditing = false;
-
-        function toggleEditMode() {
-            isEditing = !isEditing;
-            
-            const body = document.body;
-            const btn = document.getElementById('edit-toggle-btn');
-            const statusText = document.getElementById('status-text');
-            
-            // Find all elements equipped with contenteditable attributes
-            const editableElements = document.querySelectorAll('[contenteditable]');
-
-            if (isEditing) {
-                body.classList.add('edit-mode-on');
-                btn.innerText = "💾 Save Changes";
-                btn.classList.add('editing-active');
-                statusText.innerText = "🛠️ Edit Mode Active (Click text anywhere to change it)";
-                
-                // Turn editing ON for all elements
-                editableElements.forEach(el => el.setAttribute('contenteditable', 'true'));
-            } else {
-                body.classList.remove('edit-mode-on');
-                btn.innerText = "✏️ Turn On Edit Mode";
-                btn.classList.remove('editing-active');
-                statusText.innerText = "✨ View Mode (Read Only)";
-                
-                // Turn editing OFF for all elements
-                editableElements.forEach(el => el.setAttribute('contenteditable', 'false'));
-                
-                // Optional message confirming changes are saved locally for this browser session
-                alert("Your changes have been locked on your screen! (Note: refreshing the page resets text back to defaults).");
-            }
-        }
-    </script>
 </body>
 </html>
